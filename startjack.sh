@@ -2,7 +2,7 @@
 set -e
 
 # start jackd
-/usr/bin/jackd -dalsa -dhw:0 -r48000 -p512 -n3 &
+/usr/bin/jackd -dalsa -r48000 -p512 -n3 -D -Chw:USB -Phw:USB &
 
 # start jack loop clients
 alsa_in -j cloop -d cloop 2>&1 1> /dev/null &
