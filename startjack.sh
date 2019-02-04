@@ -1,4 +1,11 @@
 #!/bin/sh
+
+pkill jackd
+pkill alsa_in
+pkill alsa_out
+
+sleep 3
+
 set -e
 
 # start jackd
