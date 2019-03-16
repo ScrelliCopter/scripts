@@ -27,7 +27,7 @@ make install
 
 cat > "$INSTALLDIR/audacious.sh" <<"EOF"
 #!/bin/sh
-HERE="$(dirname %0)"
+HERE="$(dirname "$0")"
 LD_LIBRARY_PATH="$HERE/lib" "$HERE/bin/audacious"
 EOF
 chmod u+x "$INSTALLDIR/audacious.sh"
