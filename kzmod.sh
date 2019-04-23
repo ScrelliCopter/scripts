@@ -2,9 +2,9 @@
 
 export WINEPREFIX=/opt/games/winesteam
 
-WINE=~/wine/wine64-build/wine
+WINE=~/Programs/wine-4.5-x86_64.AppImage
 STEAM="${WINEPREFIX}/drive_c/Program Files (x86)/Steam/Steam.exe"
-STEAMARGS="-nofriendsui -nochatui"
+STEAMARGS=""
 
 APPID=626680
 APPPROC="hl2.exe"
