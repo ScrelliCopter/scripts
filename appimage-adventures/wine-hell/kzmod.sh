@@ -2,7 +2,7 @@
 
 export WINEPREFIX=/opt/games/winesteam
 
-WINE="/home/dopefish/Programs/wine-4.5-x86_64.AppImage"
+WINE="$HOME/Programs/wine-4.12.1-x86_64.AppImage"
 STEAM="${WINEPREFIX}/drive_c/Program Files (x86)/Steam/Steam.exe"
 STEAMARGS=""
 

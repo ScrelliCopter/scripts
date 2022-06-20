@@ -1,0 +1,3 @@
+#!/bin/bash
+./xbps-src pkg genie -j13
+for i in aarch64-musl aarch64 armv5tel-musl armv5tel armv5te-musl armv5te armv6hf-musl armv6hf armv6l-musl armv6l armv7hf-musl armv7hf armv7l-musl armv7l i686-musl i686 mipselhf-musl mipsel-musl mipshf-musl mips-musl ppc64le-musl ppc64le ppc64-musl ppc64 ppcle-musl ppcle ppc-musl ppc x86_64-musl; do ./xbps-src pkg -j13 -a $i genie || break; done
